@@ -1,17 +1,16 @@
 # Quotes on Dev 
 
 A wordpress theme replicated after 'Quotes on Dev' - a site inspired by Chris Coyier's "Quotes on Design".
-Quotes on Dev uses a custom Rest Api to randomly fetch and return posts when the 'Show me another' button
-is clicked. The front page uses a GET request to a WP API to dynamically add a new quote without having 
-to refresh each time, it also uses a POST request to submit a new quote into the site's database.
 
-## screenshot
+# Screenshots
 
 * Displayed on the Home page is a quote and button that on click would generate another random quote. Pressing this button triggers an ajax request to the rest api, displaying a new random quote from the stored quotes contained in the blog posts.
 
-<img src="screenshots/quotes1.png" width="150px"><img src="screenshots/quotes2.png" width="150px"><img src="screenshots/quotes3.png" width="150px"><img src="screenshots/quotes4.png" width="150px"><img src="screenshots/quotes5.png" width="150px"><img src="screenshots/quotes6.png" width="150px">
+<img src="screenshots/quotes1.png" width="600px">
 
-## Tech used
+<img src="screenshots/quotes2.png" width="400px">
+
+## Technologies
 
 * Wordpress
 * Javascript
@@ -49,7 +48,6 @@ to refresh each time, it also uses a POST request to submit a new quote into the
 * Properly enqueue CSS and JS files in the theme’s functions.php file
 * Leverage the WP template hierarchy to generate required layouts for the website
 * Be validated with Theme Check
-
 
 
 
