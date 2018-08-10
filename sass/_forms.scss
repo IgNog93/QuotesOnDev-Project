@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color:$background;
+	border: 2px solid #0c0;
+	border-radius: 3px;
+	color:$green;
+	padding:.5rem 2.3rem;
+	font-weight: 700;
+
+	&:hover {
+		color: darkgreen;
+		border-color: darkgreen;
+	}
+
+	&:active,
+	&:focus {
+		border-color: #aaa #bbb #bbb;
+		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	}
+}
+@media (min-width: 620px){
+	button{
+		font-size: 1.25rem;
+	}
+}
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+
+	&:focus {
+		color: #111;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+	border: 2px solid #0c0;
+}
+
+//submit page//
+.quote-source-url-box{
+	padding-bottom:2rem;
+	margin-bottom:1rem;
+}
+.quote-author-box{
+	display: flex;
+	flex-direction: column;
+}
+.quote-submission-wrapper{
+	div:nth-child(-n+4){
+		padding-bottom:1rem;
+		
+		input:nth-child(-n+4){
+			margin-top:1rem;
+			border: 2px solid #0c0;
+		}
+	}
+}
+.search-submit{
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	color: #0c0;
+	padding: 0;
+	padding-left: 1rem;
+}
+
+.search-box{
+	border:0;
+	padding:0;
+	margin:0;
+}
+@media screen and (min-width: 620px){
+
+.quote-source-box{
+	display:flex;
+	flex-direction: column;
+}
+
+.quote-source-url-box{
+	display:flex;
+	flex-direction: column;
+}
+
+.quote-submission-wrapper{
+	input:nth-child(-n+4){
+		width:60%;
+	}
+ }
+}

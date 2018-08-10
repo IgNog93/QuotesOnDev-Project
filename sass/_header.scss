@@ -1,0 +1,30 @@
+.logo {
+  text-align: left;
+
+  @media (min-width: 1080px) {
+    text-align: center;
+  }
+
+  .logo-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 300px;
+
+    @media (min-width: 620px) {
+      width: 500px;
+    }
+
+    @media (min-width: 1080px){
+      width: 700px;
+    }
+  }
+}
+
+.page-header {
+  .page-title {
+    font-size: 2em;
+  }
+}
